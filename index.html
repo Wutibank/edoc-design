@@ -47,7 +47,7 @@
             </ul>
         </nav>
         <div id="show-bar">
-            <div class="fixed-box ">
+            <div class="fixed-box">
                 <button id="sidebarCollapse2" class="button-my-mobile" @click="collapsebar"> <i class="fa fa-2x" v-bind:class="{ 'fa-angle-right': !iconActiveR,'fa-angle-left': !iconActiveL }"></i> </button>
             </div>
         </div>
@@ -67,8 +67,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
-                    <form class="form-inline my-2 my-lg-0"   id="SearchForm">
-                       
+                    <form class="form-inline my-2 my-lg-0" id="SearchForm">
+
                         <i class="fa fa-search fa-2x pay-grey-color mr-sm-3 mr-1 d-none d-xs-none d-sm-none d-lg-inline"></i>
                         <input class="form-control mr-sm-2 col-12 col-md-11 col-lg-8" type="text" placeholder="Search" aria-label="Search">
 
@@ -89,16 +89,54 @@
                     </form>
                 </div>
             </nav>
-            <h2>Collapsible Sidebar Using Bootstrap 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="line"></div>
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="line"></div>
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="line"></div>
+            <div class="row">
+                <div class="col content pt-0">
+                    <div class="card-deck w-100 h-100 mx-auto" style="height: 8rem">
+                        <div class="card bg-light mb-2">
+                            <div class="card-body">
+                                This is some text within a card block.
+                            </div>
+
+                        </div>
+                        <div class="card bg-light mx-0 mb-2">
+                            <div class="card-body">
+                                This is some text within a card block.
+                            </div>
+
+                        </div>
+                        <div class="card bg-light mb-2">
+                            <div class="card-body">
+                                This is some text within a card block.
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col content pt-4">
+                    <div class="card-deck w-100 h-100 mx-auto">
+                        <div class="card text-white bg-dark mb-3" style="height: 30rem">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Dark card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="card text-white bg-dark mb-3" style="max-width: 30rem; height: 20rem">
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                                <h4 class="card-title">Dark card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
