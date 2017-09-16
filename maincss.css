@@ -56,3 +56,22 @@ body{
     font-size: 1.5em;
 
 }
+
+.icon-0x{
+    font-size: 16px;
+    }
+.icon-1x{
+    font-size: 24px;
+    }
+.icon-2x{
+    font-size: 32px;
+    }
+.icon-3x{
+    font-size: 48px;
+    }
+.icon-4x{
+    font-size: 64px;
+    }
+.icon-5x{
+    font-size: 96px;
+    }

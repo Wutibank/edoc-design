@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="maincss.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@3.0.0/dist/css/ionicons.min.css">
     <link rel="stylesheet" href="sidebar.css"> </head>
 <script src="https://unpkg.com/vue"></script>
 
@@ -18,28 +19,37 @@
                 <h3>{{ message }}</h3> <strong>ED</strong> </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse"> <i class="fa fa-dashboard"></i> Dashboard </a>
+                    <a href="#homeSubmenu" data-toggle="collapse" title="หน้าแดชบอร์ด">
+                        <span class="f-center"> <i class="icon-2x ion-ios-speedometer-outline"></i> 
+                       Dashboard 
+                       </span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="fa fa-file"></i> File </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"> <i class="icon-2x ion-ios-paper-outline"></i> File </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li><a href="#">Page 1</a></li>
                         <li><a href="#">Page 2</a></li>
                         <li><a href="#">Page 3</a></li>
                     </ul>
-                    <a href="#"> <i class="fa fa-folder-open "></i> Category </a>
+                    <a href="#"> 
+                    <span class="f-center"> <i class="icon-2x ion-ios-folder-outline"></i> Category </span></a>
                 </li>
                 <li>
-                    <a href="#"> <i class="fa fa-history"></i> Activity </a>
+                    <a href="#"> 
+                    <span class="f-center"> <i class="icon-2x ion-ios-clock-outline"></i> Activity </span></a>
                 </li>
                 <li>
-                    <a href="#"> <i class="fa fa-users"></i> Student </a>
+                    <a href="#"> 
+                    <span class="f-center"> <i class="icon-2x ion-ios-people-outline"></i> Student </span></a>
                 </li>
                 <li>
-                    <a href="#"> <i class="fa fa-bar-chart-o"></i> Statistic </a>
+                    <a href="#"> 
+                    <span class="f-center"> <i class="icon-2x ion-ios-stats-outline"></i> Statistic </span></a>
                 </li>
                 <li>
-                    <a href="#"> <i class="fa fa-trash-o"></i> Bin </a>
+                    <a href="#"> 
+                    <span class="f-center"> <i class="icon-2x ion-ios-trash-outline"></i> Bin </span></a>
                 </li>
                 <li class="fixed-box">
                     <button id="sidebarCollapse" class="button-my" @click="collapsebar"> <i class="fa fa-2x" v-bind:class="{ 'fa-angle-right': iconActiveR,'fa-angle-left': iconActiveL }"></i> </button>
@@ -59,7 +69,8 @@
 
                 <div class="icon-bar d-sm-inline d-md-none d-lg-none">
                     <a href="#">
-                        <i class="fa fa-bell-o pay-grey-color"></i>
+                        <i class="icon-2x 
+ion-ios-notifications-outline pay-grey-color"></i>
                         <span class="badge badge-notify rounded-circle">3</span>
                     </a>
 
@@ -69,28 +80,16 @@
 
                     <form class="form-inline my-2 my-lg-0" id="SearchForm">
 
-                        <i class="fa fa-search fa-2x pay-grey-color mr-sm-3 mr-1 d-none d-xs-none d-sm-none d-lg-inline"></i>
+                        <i class="icon-2x ion-ios-search-outline pay-grey-color mr-sm-3 mr-1 d-none d-xs-none d-sm-none d-lg-inline"></i>
                         <input class="form-control mr-sm-2 col-12 col-md-11 col-lg-8" type="text" placeholder="Search" aria-label="Search">
 
                         <div class="icon-bar mt-3 mt-sm-3 mt-md-4 mt-lg-3 mt-xl-0 mx-auto mr-xl-2">
 
                             <a href="#" class="d-md-inline d-sm-none d-none">
-                                <i class="fa fa-bell-o pay-grey-color"></i>
+                                <i class="icon-2x 
+ion-ios-notifications-outline pay-grey-color"></i>
                                 <span class="badge badge-notify rounded-circle">3</span>
                             </a>
-
-<!--
-                            <div class="d-inline">
-                               
-                            <a href="#">
-                                <i class="fa fa-user-circle-o pay-grey-color"></i>
-                            </a>
-                            <h4 class="d-inline pl-2 pay-grey-color ">sssss sssssssss</h4>
-
-
-
-                            </div>
--->
 
 
                             <div class="dropdown d-inline">
